@@ -41,10 +41,10 @@ module.exports = {
       template: './public/index.html',
     }),
     new ModuleFederationPlugin({
-      name: 'microfrontend1',
+      name: 'microfrontend2',
       filename: 'remoteEntry.js',
       exposes: {
-        './Microfrontend1': './src/components/Microfrontend1.vue',
+        './Microfrontend1': './src/components/Microfrontend2.vue',
       },
       shared: { vue: { singleton: true } },
     }),

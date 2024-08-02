@@ -1,4 +1,4 @@
 import { createApp } from 'vue';
-import Microfrontend1 from './components/Microfrontend1.vue';
+import Microfrontend2 from './components/Microfrontend2.vue';
 
-createApp(Microfrontend1).mount('#app');
+createApp(Microfrontend2).mount('#app');

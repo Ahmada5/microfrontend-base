@@ -6,16 +6,16 @@ export default defineConfig({
   plugins: [
     vue(),
     federation({
-      name: 'microfrontend1',
+      name: 'microfrontend2',
       filename: 'remoteEntry.js',
       exposes: {
-        './Microfrontend1': './src/components/Microfrontend1.vue',
+        './Microfrontend2': './src/components/Microfrontend2.vue',
       },
       shared: ['vue'],
     }),
   ],
   server: {
-    port: 3001,
+    port: 3002,
   },
   build: {
     target: 'esnext',
